@@ -15,6 +15,12 @@
 		A6F5D4822596A6420014FA83 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F5D4572596A6400014FA83 /* ContentView.swift */; };
 		A6F5D4832596A6420014FA83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6F5D4582596A6420014FA83 /* Assets.xcassets */; };
 		A6F5D4842596A6420014FA83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6F5D4582596A6420014FA83 /* Assets.xcassets */; };
+		A6F5D498259751660014FA83 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6F5D497259751660014FA83 /* Colors.xcassets */; };
+		A6F5D499259751660014FA83 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6F5D497259751660014FA83 /* Colors.xcassets */; };
+		A6F5D4A0259752810014FA83 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F5D49F259752810014FA83 /* Color+Extension.swift */; };
+		A6F5D4A1259752810014FA83 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F5D49F259752810014FA83 /* Color+Extension.swift */; };
+		A6F5D4A72597585D0014FA83 /* CoffeeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F5D4A62597585D0014FA83 /* CoffeeModel.swift */; };
+		A6F5D4A82597585D0014FA83 /* CoffeeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F5D4A62597585D0014FA83 /* CoffeeModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,9 @@
 		A6F5D4782596A6420014FA83 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6F5D47C2596A6420014FA83 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		A6F5D47E2596A6420014FA83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6F5D497259751660014FA83 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		A6F5D49F259752810014FA83 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		A6F5D4A62597585D0014FA83 /* CoffeeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,9 +107,12 @@
 		A6F5D4552596A6400014FA83 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				A6F5D49E259752630014FA83 /* Extensions */,
 				A6F5D4562596A6400014FA83 /* coffeetimeApp.swift */,
 				A6F5D4572596A6400014FA83 /* ContentView.swift */,
 				A6F5D4582596A6420014FA83 /* Assets.xcassets */,
+				A6F5D497259751660014FA83 /* Colors.xcassets */,
+				A6F5D4A62597585D0014FA83 /* CoffeeModel.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -149,6 +161,14 @@
 				A6F5D47E2596A6420014FA83 /* Info.plist */,
 			);
 			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		A6F5D49E259752630014FA83 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A6F5D49F259752810014FA83 /* Color+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,6 +296,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A6F5D4832596A6420014FA83 /* Assets.xcassets in Resources */,
+				A6F5D498259751660014FA83 /* Colors.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +305,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A6F5D4842596A6420014FA83 /* Assets.xcassets in Resources */,
+				A6F5D499259751660014FA83 /* Colors.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,6 +331,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A6F5D4812596A6420014FA83 /* ContentView.swift in Sources */,
+				A6F5D4A72597585D0014FA83 /* CoffeeModel.swift in Sources */,
+				A6F5D4A0259752810014FA83 /* Color+Extension.swift in Sources */,
 				A6F5D47F2596A6420014FA83 /* coffeetimeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -318,6 +342,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A6F5D4822596A6420014FA83 /* ContentView.swift in Sources */,
+				A6F5D4A82597585D0014FA83 /* CoffeeModel.swift in Sources */,
+				A6F5D4A1259752810014FA83 /* Color+Extension.swift in Sources */,
 				A6F5D4802596A6420014FA83 /* coffeetimeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
